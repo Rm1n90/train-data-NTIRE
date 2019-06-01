@@ -1,6 +1,6 @@
 ### Prepare training data for NTIRE SR Challenge
 
-* Download datasets [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/), [FLCK2K](), [PEX2K]()
+* Download datasets [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/), [FLK2K](), [PEX2K]()
 
 * Run the following Matlab scripts:
   1. [HR_to_LR_BICUBIC.m](): Generate bicubic LR images x2, x3, x4, x8
