@@ -1,7 +1,8 @@
 function Prepare_TrainData_HR_LR_DN()
-%% settings
-path_save = './DIV2K';
+% settings
+
 path_src = './DIV2K/DIV2K_HR';
+path_save = './DIV2K';
 ext               =  {'*.jpg','*.png','*.bmp'};
 filepaths           =  [];
 for i = 1 : length(ext)
@@ -15,7 +16,7 @@ for idx_im = 1:nb_im
     ImHR = imread(fullfile(path_src, filepaths(idx_im).name));
     DIV2K_HR{idx_im} = ImHR;
 end
-%% generate and save LR via imresize() with Bicubic
+% generate and save LR via imresize() with Bicubic
 sigma = 30; % noise level
 for IdxIm = 1:nb_im
     fprintf('IdxIm=%d\n', IdxIm);
