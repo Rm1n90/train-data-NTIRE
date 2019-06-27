@@ -1,5 +1,5 @@
 function Prepare_TrainData_HR_LR_BI()
-%% settings
+% settings
 
 path_src = './DIV2K/DIV2K_HR';
 path_save = './DIV2K';
@@ -16,7 +16,7 @@ for idx_im = 1:nb_im
     ImHR = imread(fullfile(path_src, filepaths(idx_im).name));
     DIV2K_HR{idx_im} = ImHR;
 end
-%% generate and save LR via imresize() with Bicubic
+% generate and save LR via imresize() with Bicubic
 
 for IdxIm = 1:nb_im
     fprintf('IdxIm=%d\n', IdxIm);
