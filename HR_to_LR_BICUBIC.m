@@ -1,7 +1,8 @@
 function Prepare_TrainData_HR_LR_BI()
 %% settings
-path_save = './DIV2K';
+
 path_src = './DIV2K/DIV2K_HR';
+path_save = './DIV2K';
 ext               =  {'*.jpg','*.png','*.bmp'};
 filepaths           =  [];
 for i = 1 : length(ext)
